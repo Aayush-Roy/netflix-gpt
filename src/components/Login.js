@@ -4,6 +4,7 @@ import { checkValidData } from '../utils/validate';
 function Login() {
   const[isSignIn,setIsSignIn]=useState(true);
   const[errorMessage,setErrorMessage] = useState();
+  const name = useRef(null);
   const email = useRef(null);
   const password = useRef(null);
   const toggleSignInForm= ()=>{
@@ -26,11 +27,9 @@ function Login() {
       </div>
       <form onSubmit={(e)=>e.preventDefault()} action="" className='bg-black bg-opacity-85 text-white py-10 px-8 rounded-lg absolute gap-6 w-3/12 flex flex-col my-36 mx-auto right-0 left-0'>
       <h1 className='text-3xl font-bold'>{isSignIn ? "Sign in" : "Sign up"}</h1>
-      
       {!isSignIn && 
-      <input type="text" className='px-2 py-2 outline-none rounded bg-zinc-800' name="" id="" placeholder='Full Name'/>
+      <input ref={name} type="text" className='px-2 py-2 outline-none rounded bg-zinc-800' name="" id="" placeholder='Full Name'/>
       }
-
         <input type="text" ref={email} className='px-2 py-2 outline-none rounded bg-zinc-800' name="" id="" placeholder='Email Address'/>
         <input type="password" ref={password} className='px-2 py-2 outline-none rounded bg-zinc-800' name="" id=""  placeholder='Password'/>
         <p className='text-red-600 text-sm'>{errorMessage}</p>
