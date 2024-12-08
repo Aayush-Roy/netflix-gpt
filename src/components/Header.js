@@ -47,7 +47,7 @@ const Header = () => {
   <div className='flex items-center gap-4'>
     {/* <p><FaUserCircle/></p> */}
     <img className='w-8 rounded-full' src={user.photoURL} alt="" />
-    <button onClick={handleSignOut}>Sign out</button>
+    <button onClick={handleSignOut} className='bg-white px-6 py-1 rounded font-semibold'>Sign out</button>
   </div>
 }
  </div>
