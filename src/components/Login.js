@@ -6,7 +6,7 @@ import { auth } from '../utils/firebase';
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { photoUrl } from '../utils/constants';
+import { BG_URL, photoUrl } from '../utils/constants';
 
 function Login() {
   const[isSignIn,setIsSignIn]=useState(true);
@@ -73,7 +73,7 @@ function Login() {
     <div>
       <Header/>
       <div className=''>
-      <img className='absolute w-full h-full' src="https://cdn-images-1.medium.com/max/1024/1*5lyavS59mazOFnb55Z6znQ.png" alt="" />
+      <img className='absolute w-full h-full' src={BG_URL} alt="" />
       </div>
       <form onSubmit={(e)=>e.preventDefault()} action="" className='bg-black bg-opacity-85 text-white py-10 px-8 rounded-lg absolute gap-6 w-3/12 flex flex-col my-36 mx-auto right-0 left-0'>
       <h1 className='text-3xl font-bold'>{isSignIn ? "Sign in" : "Sign up"}</h1>

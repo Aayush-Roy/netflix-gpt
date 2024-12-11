@@ -9,3 +9,18 @@ export const API_OPTIONS = {
   };
 
   export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
+  export const BG_URL = "https://cdn-images-1.medium.com/max/1024/1*5lyavS59mazOFnb55Z6znQ.png";
+
+  export const SUPPORTED_LANGUAGES = [
+    { identifier: "en", name: "English" },
+    { identifier: "hindi", name: "Hindi" },
+    { identifier: "spanish", name: "Spanish" },
+    { identifier: "french", name: "French" },
+    { identifier: "german", name: "German" },
+    { identifier: "chinese", name: "Chinese" },
+    { identifier: "japanese", name: "Japanese" },
+    { identifier: "russian", name: "Russian" },
+    { identifier: "arabic", name: "Arabic" },
+    { identifier: "italian", name: "Italian" },
+    { identifier: "korean", name: "Korean" },
+];

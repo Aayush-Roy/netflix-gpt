@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 const SecondaryContainer = () => {
   const movies = useSelector(store=>store.movies);
-  console.log(movies)
+  // console.log(movies)
   return (
     <div className='-mt-[28%] relative'>
    
