@@ -3,7 +3,7 @@ import React from 'react'
 const GptMovieSuggestions = () => {
   return (
     <div>
-      Movie Suggestions
+      Suggestion card
     </div>
   )
 }
