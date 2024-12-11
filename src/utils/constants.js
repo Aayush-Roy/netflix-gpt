@@ -24,3 +24,7 @@ export const API_OPTIONS = {
     { identifier: "italian", name: "Italian" },
     { identifier: "korean", name: "Korean" },
 ];
+
+export const OPENAI_GPT_KEY = "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";
+// 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
+// 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
